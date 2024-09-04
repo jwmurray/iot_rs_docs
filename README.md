@@ -36,7 +36,7 @@ Unofficial translation:
 - 中文(zh_CN)：[Rust 中的命令行应用][rust-cli-zh_CN] (2021-09-13)
 - 한글(ko_KR)：[Rust 커맨드라인 애플리케이션][rust-cli-ko_KR] (2023-05-31)
 
-[IotBook]: https://github.com/jwmurray/iot_rs/book
+[IotBook]: https://jwmurray.github.com/jwmurray/iot_rs
 [wg]: https://github.com/rust-cli/meta
 [rust-cli-zh_CN]: https://suibianxiedianer.github.io/rust-cli-book-zh_CN/
 [rust-cli-ko_KR]: https://parksb.github.io/rust-cli-book-ko-kr/

@@ -1,8 +1,18 @@
-# Learning Rust by Writing a Command Line App in 15 Minutes
+# Learning Rust the "Internet of Things" (IoT) using rust servers and rust embedded sensors in 15 Minutes
 
 This tutorial will guide you through writing
+an [Rust] Axum server that will communicate with Rust-based IoT sensors:
+
+* Temperature and humidity sensor
+* Light Intensity Sensor
+* Soil Moisture Sensor
+* Carbon Dioxide Sensor
+* Accelerometer
+* GPS tracker
+
+
 a CLI (command line interface) application
-in [Rust].
+in .
 It will take you roughly fifteen minutes
 to get to a point where you have a running program
 (around chapter 1.3).
