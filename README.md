@@ -1,3 +1,5 @@
+version 0.0.4
+
 # Building an IOT server and IOT devices in Rust
 
 This repo contains the Introduction to building an IOT server and IOT devices in Rust, the [IOT server in Rust][IotBook] book.
