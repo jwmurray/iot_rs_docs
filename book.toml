@@ -11,10 +11,10 @@ src = "src"
 build-dir = "public"
 build-command = "mdbook build"
 
-[output.html]
-# curly-quotes = true
-smart-punctuation = true
-additional-css = ["src/special-content.css"]
+# [output.html]
+# # curly-quotes = true
+# smart-punctuation = true
+# additional-css = ["src/special-content.css"]
 # git-repository-url = "https://github.com/jwmurray/iot_rs"
 # site-url = "/book/"
 
