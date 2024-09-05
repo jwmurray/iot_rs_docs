@@ -1,4 +1,4 @@
-version 0.0.4
+version 0.0.5
 
 # Building an IOT server and IOT devices in Rust
 
