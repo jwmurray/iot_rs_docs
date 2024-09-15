@@ -1,4 +1,2 @@
-/target
-/book
-/public
-
+target/
+*.o

@@ -1,0 +1,37 @@
+[package]
+name = "myrp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+embassy-executor = { version = "0.6.0", features = [
+    "defmt",
+    "integrated-timers",
+    "arch-cortex-m",
+    "executor-thread",
+] }
+embassy-time = { version = "0.3.2", features = ["defmt"] }
+embassy-rp = { version = "0.2.0", features = [
+    "defmt",
+    "unstable-pac",
+    "time-driver",
+    "critical-section-impl",
+] }
+
+defmt = "0.3.8"       # A highly efficient logging framework that targets resource-constrained devices, like microcontrollers
+cortex-m-rt = "0.7.3" # Minimal runtime / startup for Cortex-M microcontrollers
+cortex-m = "0.7.7"    # Low level access to Cortex-M processors
+
+
+defmt-rtt = "0.4.1"   # Real-time terminal (RTT) support for defmt
+panic-probe = "0.3.2" # Panic handler that uses probe-rs for logging
+
+critical-section = "1.1.3" # Critical sections for embedded systems
+embassy-sync = "0.6.0"
+
+
+# fixed = "1.23.1" # Fixed-point arithmetic
+# fixed-macro = "1.2" # Macros for fixed-point arithmetic
+
+# portable-atomic = { version = "1.5", features = ["critical-section"] }

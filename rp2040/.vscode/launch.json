@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "execute blinky",
+            // "preLaunchTask": "build-blinky",
+            // "program": "${workspaceFolder}/embassy/iot_rs/rp/target/debug/blinky",
+            "program": "/home/jmurray/code/rust/iot_rs/embassy/iot_rs/rp/target/thumbv6m-none-eabi/debug/iot_blinky_21",
+            "args": [],
+            "cwd": "${workspaceFolder}/embassy/iot_rs/rp"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug",
+            "program": "${workspaceFolder}/embassy/iot_rs/rp/target/debug/blinky",
+            "args": [],
+            "cwd": "${workspaceFolder}/embassy/iot_rs/rp"
+        },
+        {
+            "type": "probe-rs-debug",
+            "request": "launch",
+            "name": "Debug application",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "probe-rs",
+            "runtimeArgs": [
+                "iot_blinky"
+            ],
+            "chip": "RP2040",
+            "flashingConfig": {
+                "flashingEnabled": true,
+                "haltAfterReset": false,
+                "formatOptions": {}
+            },
+            "coreConfigs": [
+                {
+                    "coreIndex": 0,
+                    "programBinary": "target/thumbv6m-none-eabi/debug/iot_blinky",
+                }
+            ],
+            "env": {
+                "RUST_LOG": "info"
+            },
+            "consoleLogLevel": "Console"
+        },
+    ]
+}
